@@ -2,19 +2,42 @@
 
 class Calculator {
   //write your code here
-  constructor () {
+  constructor (number) {
+    this.number = number
   }
-  add () {
+
+  add (num) {
+    this.number += num
+    return this
   }
-  subtract () {
+
+  subtract (num) {
+    this.number -= num
+    return this
   }
-  multiply () {
+
+  multiply (num) {
+    this.number *=num
+    return this
   }
-  divide () {
+
+  divide (num) {
+    this.number = this.number/num
+    return this
   }
-  square () {
+
+  square (num) {
+    let power=1
+    for(let a=0; a<num; a++) {
+      power=power*this.number
+    }
+    this.number=power
+    return this
   }
+
   squareRoot () {
+    this.number=Math.sqrt(this.number)
+    return this
   }
 }
 
