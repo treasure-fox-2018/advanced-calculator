@@ -2,19 +2,38 @@
 
 class Calculator {
   //write your code here
-  constructor () {
+  constructor (num) {
+    this.num = num
   }
+
   add () {
+    return this.num += this.num
   }
   subtract () {
+    return this.num -= this.num
   }
   multiply () {
+    return this.num *= this.num
   }
   divide () {
+    return this.num /= this.num
   }
-  square () {
+  square (input) { // pangkat sesuai sebanyak, jadi kalinya sesuai sbnyak input
+    var result = Math.pow(this.num, input)
+    return result
   }
   squareRoot () {
+    return this.num = Math.sqrt(this.num)
+  }
+  luasLingkaran(){
+    this.pi = 3.14
+    var result = this.pi*(Math.pow(this.num, 2)) //
+    return result
+  }
+  kelilingLingkaran(){
+    this.pi = 3.14
+    var result = 2*this.pi*this.num
+    return result
   }
 }
 
