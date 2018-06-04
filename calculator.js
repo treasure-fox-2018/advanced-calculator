@@ -36,7 +36,9 @@ class Calculator {
 }
 
 var calculate = new Calculator(2);
-console.log(calculate.add(5).add(5).subtract(4).divide(4).hitung_lingkaran().num); // 6.28
+console.log(calculate.add(5).add(5).subtract(4).divide(4).hitung_lingkaran().num); 
+
+// hasil = ((2+2+5+4)/4) ---> pi * hasil = 6.28
 
 /** note : you can use several features from ecmascript, such as:
 * - Classes
