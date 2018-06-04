@@ -2,22 +2,45 @@
 
 class Calculator {
   //write your code here
-  constructor () {
+  constructor (num) {
+    this.num = num
+
   }
-  add () {
+  add (num1) {
+   this.num = this.num + num1
+   return this
   }
-  subtract () {
+
+  subtract (num1) {
+    this.num = this.num - num1
+    return this
   }
-  multiply () {
+
+  multiply (num1) {
+    this.num = this.num * num1
+    return this
   }
-  divide () {
+
+  divide (num1) {
+    this.num = this.num / num1
+    return this
   }
-  square () {
+
+  square (num1) {
+    this.num = Math.pow(this.num, num1)
+    return this
   }
-  squareRoot () {
+
+  squareRoot (num1) {
+    this.num = Math.sqrt(this.num, (1/num1))
+    return this
   }
 }
 
+
+var z = new Calculator(27)
+ let count = z.squareRoot(3).num
+console.log(count)
 /** note : you can use several features from ecmascript, such as:
 * - Classes
 * - Default Parameters
