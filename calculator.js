@@ -62,10 +62,6 @@ class Calculator {
 }
 
 
-let calculator = new Calculator(6);
-let result = calculator.circleRound(5).number;
-
-console.log(result);
 
 /** note : you can use several features from ecmascript, such as:
 * - Classes
