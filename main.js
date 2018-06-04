@@ -2,4 +2,6 @@
 
 const Calculator = require("./calculator.js")
 
-// execute function on calculator.js in here
+var counting = new Calculator(4)
+
+console.log(counting.add(4).subtract(5).result)
