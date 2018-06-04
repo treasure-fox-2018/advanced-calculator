@@ -2,21 +2,41 @@
 
 class Calculator {
   //write your code here
-  constructor () {
+  constructor (firstNumber) {
+    this.result = firstNumber;
+    this.phi = 3.14;
   }
-  add () {
+  add (number) {
+    this.result += number;
+    return this;
   }
-  subtract () {
+  subtract (number) {
+    this.result -= number;
+    return this;
   }
-  multiply () {
+  multiply (number) {
+    this.result *= number;
+    return this;
   }
-  divide () {
+  divide (number) {
+    this.result /= number;
+    return this;
   }
-  square () {
+  square (number) {
+    this.result = Math.pow(this.result,number);
+    return this;
   }
-  squareRoot () {
+  squareRoot (number) {
+    this.result = Math.pow(this.result,1/number);
+    return this;
+  }
+  circleArea() {
+    this.result = this.phi*this.result*this.result;
+    return this;
   }
 }
+
+//run the code in main.js
 
 /** note : you can use several features from ecmascript, such as:
 * - Classes
