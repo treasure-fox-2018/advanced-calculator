@@ -2,19 +2,33 @@
 
 class Calculator {
   //write your code here
-  constructor () {
+  constructor (number) {
+    this.number = number
+    this.pi = Math.PI
   }
-  add () {
+  add (number) {
+    this.number +=number
+    return this
   }
-  subtract () {
+  subtract (number) {
+    this.number -=number
+    return this
   }
-  multiply () {
+  multiply (number) {
+    this.number *=number
+    return this
   }
-  divide () {
+  divide (number) {
+    this.number /=number
+    return this
   }
   square () {
+    this.number =Math.pow(this.number,number)
+    return this
   }
   squareRoot () {
+    this.number = Math.sqrt(this.number)
+    return this
   }
 }
 
