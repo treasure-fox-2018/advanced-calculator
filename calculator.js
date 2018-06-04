@@ -2,29 +2,39 @@
 
 class Calculator {
   //write your code here
-  constructor (num1, num2) {
-    this.num1 = num1,
-    this.num2 = num2
+  constructor (num1) {
+    this.num1 = num1
   }
-  add () {
-    return this.num1 + this.num2
+  add (num2) {
+    this.num1 = this.num1 + num2
+    return this
   }
-  subtract () {
-    return this.num1 - this.num2
+  subtract (num2) {
+    this.num1 = this.num1 - num2
+    return this
   }
-  multiply () {
-    return this.num1 * this.num2
+  multiply (num2) {
+    this.num1 = this.num1 * num2
+    return this
   }
-  divide () {
-    return this.num1 / this.num2
+  divide (num2) {
+    this.num1 = this.num1 / num2
+    return this
   }
-  square () {
-    return Math.pow(this.num1, this.num2)
+  square (num2) {
+    this.num1 = Math.pow(this.num1, num2)
+    return this
   }
-  squareRoot () {
-    return Math.sqrt(this.num1)
+  squareRoot (num2) {
+    this.num1 = Math.pow(this.num1, (1/num2))
+    return this
   }
 }
+const pi = 22/7
+
+var r = new Calculator (7)
+let luasLingkaran = r.square(2).multiply(pi).num1
+console.log(luasLingkaran)
 
 /** note : you can use several features from ecmascript, such as:
 * - Classes
