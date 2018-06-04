@@ -39,6 +39,12 @@ class Calculator {
     this.number=Math.sqrt(this.number)
     return this
   }
+
+  circleArea () {
+    this.number = this.number*this.number*(22/7)
+    return this
+  }
+
 }
 
 /** note : you can use several features from ecmascript, such as:
